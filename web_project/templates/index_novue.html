@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>虚拟主播数据可视化</title>
+    <link href="../static/css/main.css" rel="stylesheet">
+    <script src="/static/js/package/dist/echarts.js"></script>
+</head>
+<body>
+<div id="top_left">
+</div>
+<div id="top_center">标题{{ form.mid_left.title|safe }}</div>
+<div id="top_right">当前时间</div>
+<div id="middle_left"></div>
+    <script type="text/javascript">
+        var tr_chart = echarts.init(document.getElementById('middle_left'));
+        var option = {
+            // 设置标题
+            title: {
+                // 设置标题内容
+                text: '{{ form.mid_left.title|safe }}',
+                // 设置时候显示标题
+                show: 'true',
+                textAlign: 'center'
+            },
+            xAxis: {
+                type: 'category',
+                data: {{ form.mid_left.xAxis|safe }}
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: {
+                type: 'bar',
+                data: {{ form.mid_left.series|safe }}
+            }
+        };
+        tr_chart.setOption(option);
+        window.addEventListener("resize", function () {
+            tr_chart.resize();
+        });
+    </script>
+<div id="middle_center">当前数据</div>
+<div id="middle_right">互动人数TOP10|柱形图</div>
+<div id="bottom_left">营收前十占比|饼图</div>
+<div id="bottom_center">当前人气TOP10|</div>
+<div id="bottom_right">散点图</div>
+</body>
+</html>

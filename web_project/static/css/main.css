@@ -1,0 +1,97 @@
+@import url("//unpkg.com/element-ui@2.15.7/lib/theme-chalk/index.css");
+
+body{
+    margin: 0;
+    background: #fffafa;
+}
+#top_left{
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    top: 0%;
+    left: 0%;
+    background: snow;
+}
+#top_center{
+    position: absolute;
+    width: 40%;
+    height: 5%;
+    top: 0%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: antiquewhite;
+}
+#top_right{
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    top: 0%;
+    left: 70%;
+    background: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#middle_left{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 5%;
+    left: 0%;
+    background: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#middle_center{
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    top: 5%;
+    left: 40%;
+    background: gainsboro;
+    align-items: center;
+    justify-content: center;
+}
+#middle_right{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 5%;
+    left: 60%;
+    background: mintcream;
+    align-items: center;
+    justify-content: center;
+}
+#bottom_left{
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 55%;
+    left: 0%;
+    background: paleturquoise;
+    align-items: center;
+    justify-content: center;
+}
+#bottom_center{
+    position: absolute;
+    width: 40%;
+    height: 45%;
+    top: 55%;
+    left: 30%;
+    background: wheat;
+    align-items: center;
+    justify-content: center;
+}
+#bottom_right{
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    top: 55%;
+    left: 70%;
+    background: dimgray;
+    align-items: center;
+    justify-content: center;
+}

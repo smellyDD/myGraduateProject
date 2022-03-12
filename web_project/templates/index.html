@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>虚拟主播数据可视化</title>
+    <link href="../static/css/main.css" rel="stylesheet">
+    <script>
+</head>
+<body>
+<div id="top_center">标题</div>
+<div id="top_right">当前时间</div>
+<div id="middle_left">营收TOP10|柱形图
+    <div class="echarts1", id="bar_1"></div>
+    <script type="text/javascript">
+        let myChar = echarts.init(document.getElementById("bar_1"))
+        let option = {
+            title: {
+                text: {{ form.mid_left.title | safe }},
+            }
+        }
+    </script>
+</div>
+<div id="middle_center">当前数据</div>
+<div id="middle_right">互动人数TOP10|柱形图</div>
+<div id="bottom_left">营收前十占比|饼图</div>
+<div id="bottom_center">当前人气TOP10|</div>
+<div id="bottom_right">散点图</div>
+</body>
+</html>
